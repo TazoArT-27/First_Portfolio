@@ -1,4 +1,5 @@
 import React from "react";
+import Typical from 'react-typical'
 import {
   FaFacebookF,
   FaTwitter,
@@ -36,15 +37,24 @@ const Banner = () => {
                     <FaInstagram className="headerIcon" />
                   </li>
                 </ul>
+                {/* <Typical
+                  steps={['I am ', 1000, 'Shafayat Tazoar', 100]}
+                  loop={Infinity}
+                  wrapper="h1"
+                /> */}
                 <h1>{state.title}</h1>
-                <p>{state.text}</p>
+                <Typical
+                  steps={['Software Developer', 1000, 'Web Designer', 1000, 'Programmer', 1000]}
+                  loop={Infinity}
+                  wrapper="h4"
+                />
+                <p className='mt-3'>{state.text}</p>
                 <div className="header__buttons">
                   <a href="https://drive.google.com/file/d/1Oq9d4MQiWzN0oNmQXakjDN9hnDD7mWXt/view?usp=sharing" className="btn btn-outline">
                     My Resume
                   </a>
                   &nbsp;&nbsp;&nbsp;
                   <a href="#contact" className="btn btn-outline">
-                    {/* <FaPlay className="play" /> */}
                     Contact Me
                   </a>
                 </div>

@@ -7,6 +7,7 @@ import About from "./components/About";
 import Prices from "./components/Prices";
 import Contact from "./components/Contact";
 import ContactForm from "./components/ContactForm";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Services />
       <About />
       <Prices />
-      <Contact />
+      <Blog/>
+      {/* <Contact /> */}
       <ContactForm />
     </div>
   );

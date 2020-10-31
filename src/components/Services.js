@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import {
   FaGithub,
   FaCamera,
@@ -8,6 +10,11 @@ import {
   FaSearchDollar,
 } from "react-icons/fa";
 const Services = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   const [header] = React.useState({
     mainHeader: "SERVICES",
     subHeading: "My Services",
@@ -77,8 +84,10 @@ const Services = () => {
 
           <div className="row bgMain">
             {state.map((info) => (
-              <div className="col-4 bgMain">
-                <div className="services__box">
+              <div className="col-md-4 col-lg-4 col-12 bgMain">
+                <div className="services__box" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                   {info.icon}
                   <div className="services__box-header">{info.heading}</div>
                   <div className="services__box-p">{info.text}</div>

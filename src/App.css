@@ -254,6 +254,13 @@ body {
 .about__info h1 {
   margin-bottom: 30px;
 }
+.about__info-logo{
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+/* .about__info-logoDiv{
+  margin-right: 7px;
+} */
 .about__info-p1 {
   font-size: 14px;
   margin-bottom: 20px;
@@ -313,6 +320,25 @@ body {
 .price__btn {
   margin-top: 40px;
 }
+
+/* Blog */
+.blogs {
+  width: 100%;
+  padding: 100px 0;
+  background: white;
+}
+.blog {
+  background:  #1f2235;
+  /* padding: 25px; */
+  border-radius: 8px;
+  margin: 35px 25px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #fffafa;
+}
+
+
+
 .contact {
   padding: 100px 0;
   background: #23263a;
